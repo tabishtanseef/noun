@@ -1,0 +1,399 @@
+<html>
+<head>
+<link href="style2.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>@font-face {
+  font-family: ZapfDingbats BT;
+  src: url(fonts/zapfding.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Comic Sans MS;
+  src: url(fonts/comic.ttf);
+}
+
+@font-face {
+  font-family: cacmoose;
+  src: url(fonts/cacmoose.ttf);
+}
+td{
+margin-top:20%;
+
+}
+#dam{
+
+}
+body{
+background-image: radial-gradient(#ffe541, #ffd314);
+background-attachment:fixed;
+background-position:cover;
+}
+table{
+ background-color:#0071B2;
+ }
+h2{
+text-align:center;
+background-color:#ffffff8f;
+font-family:Roboto, Roboto Condensed, cursive; 
+}
+
+h3{
+text-align:center;
+background-color:#ffffff8f;
+font-family:Roboto, Roboto Condensed, cursive; 
+}
+
+select{
+margin-top:10px;
+}
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color:#ffffff8f;
+	font-family:Comic Sans, Comic Sans MS, cursive;
+    padding: 14px 28px;
+    font-size: 26px;
+    cursor: pointer;
+    text-align: center;
+}
+.hidden{
+display:none;
+}
+.button {
+    position: relative;
+    background-color: #f4511e;
+    border: none;
+	margin-top: 30px;
+	margin-left: 45px;
+    font-size: 25px;
+	font-family:CAC Moose, cursive;
+    color: #FFFFFF;
+    padding: 1px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+	color:#FFFF00;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+
+}
+#dim{
+margin-top:10px;
+font-family:Comic Sans, Comic Sans MS, cursive;
+font-size:20px;
+
+}
+.bwo{
+height:35px;
+text-align:center;
+}
+@media only screen and (max-device-width: 480px) {
+      img{
+	  height:auto;
+	  width:100%;
+	  margin-top:50px;
+	  }
+	  #dim{
+	  padding:0px;
+	  text-align:left;
+	  width:100%;
+	  font-size:24px;
+	   margin-top:40px;
+	   font-size:20px;
+	   
+	  }
+	  h2{
+	  margin-top:50px;
+	  }
+    }
+
+ @media only screen and (min-device-width: 481px) {
+       img{
+	  height:100%;
+	  }
+    }
+</style>
+  
+  </head>
+<body>
+
+<div class="tab1">
+<h2>SPELLING</h2>
+<h2 style="margin-top: 20px; margin-bottom: 30px; font-size: 25px; ">Change these nouns into verbs. Make sure you spell them correctly.</h2>
+<br>
+
+<div class="container" style ="margin-top:-30px;";>		
+	<div class="row" id="dim" style="font-size:25px; margin-bottom:20px; color:red; font-family:Roboto">
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	<b>NOUN	</b>
+	</div>
+	<div class="col-sm-2">		
+	<b>VERB</b>
+	</div>
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2"style="font-family:Roboto">
+	<b>NOUN	</b>
+	</div>
+	<div class="col-sm-2">
+	<b>VERB	</b>
+	</div>	
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="row" id="dim" style="font-size:22px; margin-bottom:20px;">
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	popularity	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab1" size="7" class ="bwo"> 	
+	</div>
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	stipulation	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab2" size="7" class ="bwo"> 	
+	</div>	
+	</div>
+	
+	
+	<div class="row" id="dim" style="font-size:22px; margin-bottom:20px;">
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	applause	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab3" size="7" class ="bwo"> 	
+	</div>
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	retaliation	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab4" size="7" class ="bwo"> 	
+	</div>	
+	</div>
+	
+	
+	<div class="row" id="dim" style="font-size:22px; margin-bottom:20px;">
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	inscription	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab5" size="7" class ="bwo"> 	
+	</div>
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	evaluation	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab6" size="7" class ="bwo"> 	
+	</div>	
+	</div>
+	
+	
+	<div class="row" id="dim" style="font-size:22px; margin-bottom:20px;">
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	suspicion	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab7" size="7" class ="bwo"> 	
+	</div>
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	superintendent	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab8" size="7" class ="bwo"> 	
+	</div>	
+	</div>
+	
+	<div class="row" id="dim" style="font-size:22px; margin-bottom:20px;">
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	consolation	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab9" size="7" class ="bwo"> 	
+	</div>
+	<div class="col-sm-1">	 
+	</div>
+	<div class="col-sm-2">
+	bafflement	
+	</div>
+	<div class="col-sm-2">	
+	<input type="text" id="tab10" size="7" class ="bwo"> 	
+	</div>	
+	</div>
+	
+	
+ 
+ 
+ 
+	
+    
+	
+	<div class="row" >
+	<div class="col-sm-4">
+<button class="button"   onclick="ho()"><span>Reset </span></button>
+	</div>
+	
+	<div class="col-sm-4">
+	<button class="button" onClick="go()" id="submit" ><span>Submit </span></button>
+	</div>
+
+	<div class="col-sm-4">
+	<button class="button" onClick="show()"><span>Answer Key </span></button>
+	</div>
+	</div>
+</div>
+
+
+</div>
+
+<div class="tab4 hidden">
+<img  width="100%" height="100%" src="audio/welldone.gif">
+</div>
+
+<audio id="audio2" src="audio/try-again.mp3"></audio>
+<audio id="audio1" src="audio/well-done.mp3"></audio>
+
+<script>
+
+function go() {
+
+ var bla1 = $('#tab1').val();
+ var bla2 = $('#tab2').val();
+ var bla3 = $('#tab3').val();
+ var bla4 = $('#tab4').val();
+ var bla5 = $('#tab5').val();
+ var bla6 = $('#tab6').val();
+ var bla7 = $('#tab7').val();
+ var bla8 = $('#tab8').val();
+ var bla9 = $('#tab9').val(); 
+ var bla10 = $('#tab10').val(); 
+ 
+
+
+
+
+
+if(bla1=="popularise" && bla2=="stipulate" && bla3=="applaud" && bla4=="retaliate" && bla5=="inscribe" && bla6=="evaluate" && bla7=="suspect" && bla8=="superintend" && bla9=="console" && bla10=="baffle"){
+
+var audio = document.getElementById("audio1");
+       audio.play();
+	   $('.tab1').addClass('hidden')
+	   $('.tab4').removeClass('hidden')
+}
+else{
+
+var audio = document.getElementById("audio2");
+       audio.play();
+}
+}
+function ho() {
+ 
+window.location="index.html"
+}
+function show() {
+
+	$('#submit').attr('disabled',true);
+ 
+	var t1=document.getElementById("tab1");
+	$("#tab1").css("color","red");
+	t1.value = "popularise";
+	
+	var t2=document.getElementById("tab2");
+	$("#tab2").css("color","red");
+	t2.value = "stipulate";
+	
+	var t3=document.getElementById("tab3");
+	$("#tab3").css("color","red");
+	t3.value = "applaud";
+	
+	var t4=document.getElementById("tab4");
+	$("#tab4").css("color","red");
+	t4.value = "retaliate";
+	
+	var t5=document.getElementById("tab5");
+	$("#tab5").css("color","red");
+	t5.value = "inscribe";
+	
+	var t6=document.getElementById("tab6");
+	$("#tab6").css("color","red");
+	t6.value = "evaluate";
+	
+	var t7=document.getElementById("tab7");
+	$("#tab7").css("color","red");
+	t7.value = "suspect";
+	
+	var t8=document.getElementById("tab8");
+	$("#tab8").css("color","red");
+	t8.value = "superintend";
+	
+	var t9=document.getElementById("tab9");
+	$("#tab9").css("color","red");
+	t9.value = "console";
+	
+	var t10=document.getElementById("tab10");
+	$("#tab10").css("color","red");
+	t10.value = "baffle";
+	
+	
+
+}
+
+
+</script>
+
+</body>
+</html>
